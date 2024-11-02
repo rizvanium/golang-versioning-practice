@@ -9,7 +9,7 @@ type Number interface {
 	constraints.Integer | constraints.Float
 }
 
-// Add is a function that takes two integers and adds them together, returning their sum.
+// Add is a function that takes two numbers and returns their sum.
 func Add[T Number](n1, n2 T) T {
 	return n1 + n2
 }
